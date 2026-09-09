@@ -168,7 +168,7 @@ navigation:
 
 ## 日常发布：GitHub Desktop
 
-网站仓库使用 `ZoogerLio/ZoogerLio.github.io`，正式网址是 `https://huaye410.site`。第一次发布后，日常更新不需要再配置 GitHub Pages 或阿里云：
+网站仓库使用 `ZoogerLio/huaye410-site`，正式网址是 `https://huaye410.site`。第一次发布后，日常更新不需要再配置 GitHub Pages 或阿里云：
 
 1. 修改 YAML，或者同名替换照片、背景和 CV。
 2. 可选运行 `npm run dev` 检查效果。
@@ -181,8 +181,8 @@ navigation:
 
 ## 第一次发布到 GitHub Pages
 
-1. 登录 GitHub，在账号 `ZoogerLio` 下新建公开仓库 `ZoogerLio.github.io`。不要在网页端额外创建 README、License 或 `.gitignore`。
-2. 在 GitHub Desktop 中选择 **Add an Existing Repository from your Local Drive**，选择本项目文件夹。如果提示尚未建立 Git 仓库，先选择 **Create a Repository**，名称填写 `ZoogerLio.github.io`。
+1. 登录 GitHub，在账号 `ZoogerLio` 下新建公开仓库 `huaye410-site`。不要在网页端额外创建 README、License 或 `.gitignore`。
+2. 在 GitHub Desktop 中选择 **Add an Existing Repository from your Local Drive**，选择本项目文件夹。如果提示尚未建立 Git 仓库，先选择 **Create a Repository**，名称填写 `huaye410-site`。
 3. 提交全部文件，点击 **Publish repository**，并确认仓库不是 Private。
 4. 打开仓库 **Settings → Pages**，将 **Build and deployment → Source** 设置为 **GitHub Actions**。
 5. 打开 **Actions** 页面，等待 `Deploy to GitHub Pages` 显示绿色勾号。
