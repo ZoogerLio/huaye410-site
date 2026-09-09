@@ -1,0 +1,19 @@
+{
+  "name": "academic-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/sitemap": "^3.5.1",
+    "@fontsource/dm-sans": "^5.2.6",
+    "@fontsource/roboto": "^5.2.6",
+    "astro": "^7.2.4",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,50 @@
+---
+import { externalLinkProps, withBase } from '../lib/content';
+
+interface Publication {
+  id: string;
+  data: {
+    title: string;
+    authors: string;
+    venue: string;
+    year: number;
+    doi?: string;
+    pdf?: string;
+    project?: string;
+    website?: string;
+  };
+}
+
+interface Props {
+  publications: Publication[];
+  compact?: boolean;
+}
+
+const { publications, compact = false } = Astro.props;
+const linksFor = (publication: Publication['data']) => [
+  ['DOI', publication.doi],
+  ['PDF', publication.pdf],
+  ['Project', publication.project],
+  ['Website', publication.website],
+].filter((item): item is [string, string] => Boolean(item[1]));
+---
+
+<div class:list={["publication-list", { compact }]}>
+  {publications.map((publication) => (
+    <article class="publication-item">
+      <div class="publication-year">{publication.data.year}</div>
+      <div class="publication-details">
+        <h3>{publication.data.title}</h3>
+        <p class="publication-authors">{publication.data.authors}</p>
+        <p class="publication-venue">{publication.data.venue}</p>
+        {linksFor(publication.data).length > 0 && (
+          <p class="publication-links" aria-label={`Links for ${publication.data.title}`}>
+            {linksFor(publication.data).map(([label, url]) => (
+              <a href={withBase(url)} {...externalLinkProps(url)}>[{label}]</a>
+            ))}
+          </p>
+        )}
+      </div>
+    </article>
+  ))}
+</div>

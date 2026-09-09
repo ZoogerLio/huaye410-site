@@ -1,0 +1,32 @@
+---
+import Header from './Header.astro';
+import { withBase } from '../lib/content';
+
+interface NavItem {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  name: string;
+  title: string;
+  eyebrow?: string;
+  image: string;
+  navigation: NavItem[];
+  showIntro?: boolean;
+}
+
+const { name, title, eyebrow, image, navigation, showIntro = true } = Astro.props;
+---
+
+<section class:list={['hero', { 'hero-compact': !showIntro }]} style={`--hero-image: url('${withBase(image)}'); --divider-image: url('${withBase('/images/cloud-divider.png')}')`}>
+  <Header name={name} navigation={navigation} />
+  <div class="hero-overlay"></div>
+  {showIntro && (
+    <div class="hero-content page-width">
+      {eyebrow && <p class="hero-eyebrow">{eyebrow}</p>}
+      <h1>{title}</h1>
+    </div>
+  )}
+  <div class="hero-cloud-divider" aria-hidden="true"></div>
+</section>

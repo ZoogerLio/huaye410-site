@@ -1,0 +1,15 @@
+- id: "legible-ai"
+  title: "Legible AI in Public Institutions"
+  period: "2025-present"
+  description: "An interdisciplinary study of how public-sector teams evaluate, explain, and govern machine-assisted decisions."
+  url: "https://example.com/legible-ai"
+
+- id: "community-data"
+  title: "Community Data Narratives"
+  period: "2024-2025"
+  description: "A participatory design project exploring how local organizations communicate uncertainty without losing clarity."
+
+- id: "everyday-recommendations"
+  title: "Everyday Recommendation Systems"
+  period: "2023-2024"
+  description: "Interview-based research on how people negotiate trust, convenience, and autonomy when using recommender systems."

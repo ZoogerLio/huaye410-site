@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import PublicationList from '../components/PublicationList.astro';
+
+const [profileEntries, publications] = await Promise.all([
+  getCollection('profile'),
+  getCollection('publications'),
+]);
+const profile = profileEntries[0].data;
+const sortedPublications = publications.sort((a, b) => {
+  if (b.data.year !== a.data.year) return b.data.year - a.data.year;
+  return a.data.title.localeCompare(b.data.title);
+});
+---
+
+<BaseLayout title={`Publications | ${profile.name}`} description={`Publications by ${profile.name}.`}>
+  <Hero
+    name={profile.name}
+    title="Publications"
+    eyebrow="Research output"
+    image={profile.heroImage}
+    navigation={profile.navigation}
+  />
+  <main id="main-content">
+    <section class="section publications-page page-width">
+      <div class="publications-intro">
+        <p class="section-kicker">Complete List</p>
+        <h2>Research Publications</h2>
+        <p>Publications are listed in reverse chronological order. Links are provided when available.</p>
+      </div>
+      <PublicationList publications={sortedPublications} />
+    </section>
+  </main>
+</BaseLayout>

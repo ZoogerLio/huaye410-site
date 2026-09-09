@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import { externalLinkProps } from '../lib/content';
+
+const profileEntries = await getCollection('profile');
+const profile = profileEntries[0].data;
+---
+
+<BaseLayout title={`Contact | ${profile.name}`} description={`Contact ${profile.name}.`}>
+  <Hero
+    name={profile.name}
+    title="Contact"
+    eyebrow="Get in touch"
+    image={profile.heroImage}
+    navigation={profile.navigation}
+  />
+
+  <main id="main-content">
+    <section class="section contact-page page-width">
+      <div class="contact-inner">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Let’s stay in touch.</h2>
+        </div>
+        <div class="contact-details">
+          <p>{profile.affiliation}<br />{profile.location}</p>
+          <p><a href={`mailto:${profile.email}`}>{profile.email}</a></p>
+          <div class="social-links">
+            {profile.links.map((link) => <a href={link.url} {...externalLinkProps(link.url)}>{link.label}</a>)}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</BaseLayout>

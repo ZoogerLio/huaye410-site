@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import { withBase } from '../lib/content';
+
+const profile = (await getCollection('profile'))[0].data;
+---
+
+<BaseLayout title={`Page not found | ${profile.name}`} description="The requested page could not be found.">
+  <div class="plain-header"><Header name={profile.name} navigation={profile.navigation} /></div>
+  <main id="main-content" class="not-found page-width">
+    <p class="section-kicker">404</p>
+    <h1>Page not found.</h1>
+    <p>The page you requested may have moved or no longer exists.</p>
+    <a class="button" href={withBase('/')}>Return home</a>
+  </main>
+</BaseLayout>

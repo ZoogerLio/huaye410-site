@@ -1,0 +1,33 @@
+---
+import { withBase } from '../lib/content';
+
+interface NavItem {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  name: string;
+  navigation: NavItem[];
+}
+
+const { name, navigation } = Astro.props;
+const homeHref = withBase('/');
+---
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href={homeHref} aria-label={`${name} home`}>{name}</a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      {navigation.map((item) => <a href={withBase(item.href)}>{item.label}</a>)}
+    </nav>
+
+    <details class="mobile-nav">
+      <summary aria-label="Open navigation">Menu</summary>
+      <nav aria-label="Mobile navigation">
+        {navigation.map((item) => <a href={withBase(item.href)}>{item.label}</a>)}
+      </nav>
+    </details>
+  </div>
+</header>
