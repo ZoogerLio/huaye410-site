@@ -95,7 +95,7 @@ h3 { font-size: 1.08rem; }
 .timeline-institution, .timeline-item div > p:last-child { font-size: .96rem; }
 .timeline-institution { margin-bottom: .35rem; font-weight: 500; }
 .timeline-item div > p:last-child { margin-bottom: 0; }
-.experience-section { padding-top: 8px; }
+.experience-section { padding: 8px 42px 82px; }
 
 .contact-section { position: relative; padding-top: 220px; overflow: hidden; background: var(--dark); color: rgba(255,255,255,.76); }
 .footer-cloud-divider { position: absolute; z-index: 2; inset: -2px 0 auto; height: 108px; pointer-events: none; background: var(--divider-image) center bottom / 100% 100% no-repeat; transform: rotate(180deg); }
@@ -136,6 +136,7 @@ h3 { font-size: 1.08rem; }
   .page-width, .header-inner { width: min(calc(100% - 48px), var(--page-width)); }
   .portrait-wrap { width: 42%; margin-right: 36px; }
   .about-copy { padding-inline: 36px; }
+  .experience-section { padding-inline: 36px; }
   .project-list { grid-template-columns: 1fr; gap: 28px; }
   .publications-page { grid-template-columns: 1fr; gap: 42px; }
   .publications-intro { position: static; max-width: 650px; }
@@ -168,7 +169,7 @@ h3 { font-size: 1.08rem; }
   .project-list { gap: 24px; }
   .timeline-item { grid-template-columns: 1fr; gap: 6px; }
   .timeline-period { margin-bottom: 0; }
-  .experience-section { padding-top: 8px; }
+  .experience-section { padding: 8px 0 64px; }
   .contact-inner { grid-template-columns: 1fr; gap: 36px; }
   .contact-main { min-height: calc(100vh - 190px); }
   .contact-section { padding-top: 150px; }
