@@ -12,11 +12,12 @@ const profile = defineCollection({
     affiliation: z.string(),
     location: z.string(),
     email: z.email(),
-    heroTitle: z.string(),
     introduction: z.string(),
     biography: z.array(z.string()),
+    biographyZh: z.array(z.string()),
     profileImage: z.string(),
     heroImage: z.string(),
+    footerImage: z.string(),
     cv: z.string(),
     interests: z.array(z.object({
       title: z.string(),

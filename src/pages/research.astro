@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
+import EndBanner from '../components/EndBanner.astro';
 import { externalLinkProps } from '../lib/content';
 
 const [profileEntries, projects] = await Promise.all([
@@ -15,8 +16,6 @@ const sortedProjects = projects.sort((a, b) => b.data.period.localeCompare(a.dat
 <BaseLayout title={`Research | ${profile.name}`} description={`Research interests and selected projects by ${profile.name}.`}>
   <Hero
     name={profile.name}
-    title="Research"
-    eyebrow="Research agenda"
     image={profile.heroImage}
     navigation={profile.navigation}
   />
@@ -62,6 +61,7 @@ const sortedProjects = projects.sort((a, b) => b.data.period.localeCompare(a.dat
         </div>
       </section>
     )}
+    <EndBanner image={profile.footerImage} />
   </main>
 
 </BaseLayout>

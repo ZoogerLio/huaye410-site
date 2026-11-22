@@ -1,48 +1,20 @@
-- id: "adaptive-explanations-2026"
-  title: "Adaptive Explanations for Human-AI Decision Making"
-  authors: "Your Name, Maya Chen, and Daniel Ortiz"
-  venue: "Proceedings of the ACM Conference on Human Factors in Computing Systems"
+- id: "fengshui-landscapes-yanzhen-2027"
+  title: "Reshaping Social Order and Local Power through Fengshui Landscapes (15th–16th Centuries): The Shuikou of Yanzhen in Huizhou"
+  authors: "Ye Hua"
+  venue: "Hanxue Yanjiu 漢學研究, 45(4), forthcoming December 2027. In Chinese."
+  year: 2027
+  selected: true
+
+- id: "fengshui-space-lineage-formation-2026"
+  title: "Fengshui Space and Lineage Formation in Huizhou in Mid- to Late Ming: A Case Study of Shuikou Disputes between Jixi and Dafan in Eastern Wuyuan"
+  authors: "Ye Hua"
+  venue: "Shilin 史林, no. 3, pp. 49–65. In Chinese."
   year: 2026
   selected: true
-  doi: "https://doi.org/10.0000/example.2026.001"
-  project: "https://example.com/adaptive-explanations"
 
-- id: "public-interest-ai-2025"
-  title: "Public-Interest AI: Institutional Practices for Accountable Deployment"
-  authors: "Your Name and Priya Raman"
-  venue: "Journal of Responsible Technology, 12(3), 44-61"
-  year: 2025
+- id: "social-space-yanzhen-2018"
+  title: "Social Space and the Formation of Local Order: A Case Study of Yan Town in Late Ming China"
+  authors: "Ye Hua"
+  venue: "Huixue 徽學, no. 11, pp. 114–143. In Chinese."
+  year: 2018
   selected: true
-  doi: "https://doi.org/10.0000/example.2025.014"
-  website: "https://example.com/public-interest-ai"
-
-- id: "visualizing-uncertainty-2025"
-  title: "Visualizing Uncertainty in Community Data Platforms"
-  authors: "Jordan Lee, Your Name, and Amara Wilson"
-  venue: "IEEE Visualization Conference"
-  year: 2025
-  selected: true
-
-- id: "everyday-algorithms-2024"
-  title: "Everyday Algorithms: How People Make Sense of Automated Recommendations"
-  authors: "Your Name"
-  venue: "New Media & Society, 26(8), 2120-2142"
-  year: 2024
-  selected: true
-  doi: "https://doi.org/10.0000/example.2024.008"
-
-- id: "participatory-audits-2023"
-  title: "Participatory Audits for Civic Technology"
-  authors: "Elena García, Your Name, and Samuel Brooks"
-  venue: "ACM Conference on Computer-Supported Cooperative Work and Social Computing"
-  year: 2023
-  selected: false
-  project: "https://example.com/participatory-audits"
-
-- id: "data-stories-2022"
-  title: "Data Stories as Infrastructures of Public Reasoning"
-  authors: "Your Name and Noor Ahmed"
-  venue: "Information, Communication & Society, 25(11), 1580-1598"
-  year: 2022
-  selected: false
-  website: "https://example.com/data-stories"

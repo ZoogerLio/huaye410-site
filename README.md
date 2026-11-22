@@ -120,6 +120,14 @@ interests:
 
 也可以修改 `content/profile.yaml` 的 `heroImage` 使用其他文件名。
 
+## 更换页尾背景
+
+1. 准备一张淡色宽幅横图，推荐至少 1800 像素宽。
+2. 命名为 `footer-background.jpg`。
+3. 替换 `public/images/footer-background.jpg`。
+
+也可以修改 `content/profile.yaml` 的 `footerImage` 使用其他文件名。
+
 ## 更换 CV
 
 将新的 PDF 命名为 `cv.pdf`，直接替换：
@@ -224,7 +232,8 @@ academic-homepage/
 ├── public/
 │   ├── images/
 │   │   ├── profile.jpg
-│   │   └── hero-background.jpg
+│   │   ├── hero-background.jpg
+│   │   └── footer-background.jpg
 │   └── cv/
 │       └── cv.pdf
 ├── src/
@@ -235,6 +244,4 @@ academic-homepage/
 └── README.md
 ```
 
-## Placeholder 提醒
-
-当前姓名、学校、邮箱、论文、项目、照片和 CV 都是用于展示版式的 placeholder。正式发布前请逐项替换。
+当前网页已经使用 Ye Hua 的资料、照片和 CV。发布前仍建议检查公开邮箱、CV 内容和论文信息是否为最新版本。

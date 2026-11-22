@@ -1,0 +1,17 @@
+---
+import { withBase } from '../lib/content';
+
+interface Props {
+  image: string;
+}
+
+const { image } = Astro.props;
+---
+
+<section
+  class="end-banner"
+  style={`--footer-image: url('${withBase(image)}'); --divider-image: url('${withBase('/images/cloud-divider.png')}')`}
+  aria-hidden="true"
+>
+  <div class="footer-cloud-divider"></div>
+</section>
