@@ -5,6 +5,7 @@ interface Publication {
   id: string;
   data: {
     title: string;
+    titleZh?: string;
     authors: string;
     venue: string;
     year: number;
@@ -34,8 +35,10 @@ const linksFor = (publication: Publication['data']) => [
     <article class="publication-item">
       <div class="publication-year">{publication.data.year}</div>
       <div class="publication-details">
-        <h3>{publication.data.title}</h3>
-        <p class="publication-authors">{publication.data.authors}</p>
+        <h3>
+          {publication.data.titleZh && <span class="publication-title-zh" lang="zh">{publication.data.titleZh}</span>}
+          <span>{publication.data.title}</span>
+        </h3>
         <p class="publication-venue">{publication.data.venue}</p>
         {linksFor(publication.data).length > 0 && (
           <p class="publication-links" aria-label={`Links for ${publication.data.title}`}>

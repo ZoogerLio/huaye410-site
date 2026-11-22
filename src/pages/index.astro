@@ -24,20 +24,15 @@ const title = `${profile.name} | Academic Homepage`;
 
   <main id="main-content">
     <section id="about" class="section section-about page-width">
-      <div class="portrait-wrap">
-        <img src={withBase(profile.profileImage)} alt={`Portrait of ${profile.name}`} width="720" height="480" />
-      </div>
       <div class="about-copy">
+        <div class="portrait-wrap">
+          <img src={withBase(profile.profileImage)} alt={`Portrait of ${profile.name}`} width="720" height="480" />
+        </div>
         <p class="section-kicker">Biography</p>
         <h2>{profile.name}</h2>
         <p class="role-line">{profile.role}<br />{profile.affiliation}</p>
         {profile.biography.map((paragraph) => <p>{paragraph}</p>)}
-        <div class="biography-zh" lang="zh-Hans">
-          <p class="biography-language">中文简介</p>
-          {profile.biographyZh.map((paragraph) => <p>{paragraph}</p>)}
-        </div>
         <div class="button-row">
-          <a class="button" href={withBase(profile.cv)}>View Curriculum Vitae</a>
           <a class="button" href={`mailto:${profile.email}`}>Email me</a>
         </div>
       </div>

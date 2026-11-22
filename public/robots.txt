@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://huaye410.site/sitemap-index.xml

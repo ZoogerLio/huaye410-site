@@ -5,7 +5,6 @@
 ```text
 content/          个人资料、论文、项目和经历
 public/images/    照片和背景图
-public/cv/        CV 文件
 ```
 
 通常不需要修改 `src/` 中的网页代码。
@@ -128,15 +127,9 @@ interests:
 
 也可以修改 `content/profile.yaml` 的 `footerImage` 使用其他文件名。
 
-## 更换 CV
+## CV 当前未公开
 
-将新的 PDF 命名为 `cv.pdf`，直接替换：
-
-```text
-public/cv/cv.pdf
-```
-
-不需要修改其他文件。如果想使用其他文件名，再修改 `content/profile.yaml` 的 `cv`。
+网站目前不提供 CV 查看或下载入口，`public/` 中也不保存 CV。需要重新公开时，请先检查 PDF 中是否包含电话号码、住址等不希望公开的信息，再恢复下载入口。
 
 ## 修改联系方式和外部链接
 
@@ -178,7 +171,7 @@ navigation:
 
 网站仓库使用 `ZoogerLio/huaye410-site`，正式网址是 `https://huaye410.site`。第一次发布后，日常更新不需要再配置 GitHub Pages 或阿里云：
 
-1. 修改 YAML，或者同名替换照片、背景和 CV。
+1. 修改 YAML，或者同名替换照片和背景。
 2. 可选运行 `npm run dev` 检查效果。
 3. 打开 GitHub Desktop，在左下角 **Summary** 填写本次修改，例如 `Update biography`。
 4. 点击 **Commit to main**。
@@ -234,8 +227,6 @@ academic-homepage/
 │   │   ├── profile.jpg
 │   │   ├── hero-background.jpg
 │   │   └── footer-background.jpg
-│   └── cv/
-│       └── cv.pdf
 ├── src/
 │   ├── components/
 │   ├── layouts/
@@ -244,4 +235,4 @@ academic-homepage/
 └── README.md
 ```
 
-当前网页已经使用 Ye Hua 的资料、照片和 CV。发布前仍建议检查公开邮箱、CV 内容和论文信息是否为最新版本。
+当前网页已经使用 Ye Hua 的资料和照片，CV 暂不公开。发布前仍建议检查公开邮箱和论文信息是否为最新版本。

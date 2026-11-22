@@ -14,11 +14,9 @@ const profile = defineCollection({
     email: z.email(),
     introduction: z.string(),
     biography: z.array(z.string()),
-    biographyZh: z.array(z.string()),
     profileImage: z.string(),
     heroImage: z.string(),
     footerImage: z.string(),
-    cv: z.string(),
     interests: z.array(z.object({
       title: z.string(),
       description: z.string(),
@@ -38,6 +36,7 @@ const publications = defineCollection({
   loader: file('content/publications.yaml'),
   schema: z.object({
     title: z.string(),
+    titleZh: z.string().optional(),
     authors: z.string(),
     venue: z.string(),
     year: z.number().int(),

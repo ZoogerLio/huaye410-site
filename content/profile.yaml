@@ -6,20 +6,15 @@ profile:
   email: "yehua@connect.hku.hk"
   introduction: "I study landscape-based geomantic knowledge and technology in late imperial China, with particular interests in religion, environment, material culture, and knowledge production."
   biography:
-    - "Ye Hua is a Ph.D. candidate in History at The University of Hong Kong and the Hong Kong Institute for the Humanities and Social Sciences. Her dissertation, The Making of Landscape-Based Geomantic Knowledge and Technology in China, Twelfth–Eighteenth Centuries, examines how geomantic knowledge was produced, represented, and put into practice across late imperial China."
-    - "Her research interests include early modern China and East Asia, the history of religion, environmental history, the history of science and technology, knowledge production, material culture, and digital humanities. She also participates in collaborative projects on Daoism and ecology, occupational knowledge, household encyclopedias, hand-memory techniques, and the historical ecology of villages in Wuyuan."
-  biographyZh:
-    - "华烨现为香港大学历史学在读博士生，隶属香港大学香港人文社会研究所。她的博士论文《十二至十八世纪中国景观型风水知识与技术的形成》考察中国晚期帝制时期风水知识如何被生产、表述并付诸实践。"
-    - "她的研究兴趣包括近世中国与东亚、宗教史、环境史、科学技术史、知识生产、物质文化与数字人文。她亦参与道教与生态、职业知识、日用类书、手部记忆技术以及婺源村落历史生态等合作研究项目。"
+    - "Ye Hua is a PhD candidate at the Hong Kong Institute for the Humanities and Social Sciences, University of Hong Kong, where she holds the HKU Presidential PhD Scholarship. She was also a Predoctoral Scholar at the Max Planck Institute for the History of Science (2025–2026). Before beginning her doctoral studies in September 2022, she received her BA and MA in Chinese history from Fudan University."
+    - "Her dissertation examines the historical development of landscape-based (xingfa 形法) geomancy in southern China from the twelfth to the eighteenth century. This branch of Chinese geomantic knowledge draws on the configurations of mountains and waterways to interpret the movement of qi 氣 and its influence on human fortunes."
+    - "Drawing on historical texts and fengshui manuscripts gathered through archival and field research, her dissertation investigates how historical actors developed, transmitted, and applied geomantic knowledge through their engagement with mountainous landscapes. It explores how people learned to interpret and modify landscape configurations to influence human fortunes, and how they applied this knowledge to develop technologies for maintaining social order and regulating everyday life. In particular, her research examines how geomantic practices connected local environments, individuals, communities, and imperial rule."
   profileImage: "/images/profile.jpg"
   heroImage: "/images/hero-background.jpg"
   footerImage: "/images/footer-background.jpg"
-  cv: "/cv/cv.pdf"
   interests:
     - title: "Geomantic Knowledge and Technology"
       description: "Tracing the production, circulation, visualization, and practical use of fengshui knowledge from the twelfth to the eighteenth century."
-    - title: "Early Modern China and East Asia"
-      description: "Studying local society, spatial order, and knowledge traditions across late imperial China and the wider East Asian context."
     - title: "Religion and Environmental History"
       description: "Examining how religious practice and ideas about landscapes shaped relations among communities, mountains, rivers, and ancestors."
     - title: "History of Science and Material Culture"
