@@ -17,12 +17,6 @@
   role: "B.A. in History"
   period: "2018"
 
-- id: "exchange-nus"
-  type: "education"
-  institution: "National University of Singapore, Singapore"
-  role: "Exchange Student"
-  period: "2016"
-
 - id: "first-research-article-fellowship"
   type: "experience"
   institution: "Max Planck Institute for the History of Science, Berlin"
@@ -34,21 +28,3 @@
   institution: "Faculty of Letters, Arts and Sciences, Waseda University, Tokyo"
   role: "Visiting Research Fellow"
   period: "2024–2025"
-
-- id: "ta-hku"
-  type: "experience"
-  institution: "The University of Hong Kong, Hong Kong"
-  role: "Teaching Assistant, Spirituality, Religion and Social Change"
-  period: "2024"
-
-- id: "ta-rural-society"
-  type: "experience"
-  institution: "Department of History, Fudan University, Shanghai"
-  role: "Teaching Assistant, Rural Society of Ancient China"
-  period: "2019–2020"
-
-- id: "ta-gender-history"
-  type: "experience"
-  institution: "Department of History, Fudan University, Shanghai"
-  role: "Teaching Assistant, Gender and History"
-  period: "2019"
